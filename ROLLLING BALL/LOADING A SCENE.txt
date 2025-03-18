@@ -1,0 +1,13 @@
+using UnityEngine;
+using UnityEngine.SceneManagement; // Make sure to include this to work with scenes
+
+public class LoadSceneOnButtonPress : MonoBehaviour
+{
+    public string sceneName; // The name of the scene you want to load
+
+    // This function is triggered when the button is clicked
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+}
